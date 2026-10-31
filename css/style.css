@@ -1,0 +1,192 @@
+*{
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: #f5f3f2;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #292929;
+  background: #f5f3f2;
+}
+
+.bnb {
+  max-width: 440px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  border: 1px solid #e8e8e8;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+h1 span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #777;
+}
+
+form {
+  overflow: hidden;
+  border: 1px solid #d6d6d6;
+  border-radius: 14px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.check {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.check:first-child {
+  border-right: 1px solid #e5e5e5;
+}
+
+p {
+  margin: 0;
+}
+
+
+.hospede {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+input[type="date"] {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 0.85rem;
+  color: #444;
+}
+
+.hospede {
+  padding: 15px 15px 0;
+}
+
+.hospedes {
+  width: calc(100% - 30px);
+  margin: 0 15px 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+button {
+  width: calc(100% - 30px);
+  margin: 5px 15px 15px;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  background: #e51d53;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #c81746;
+  transform: translateY(-1px);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.cobrado {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.bnb > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+.bnb > div p:last-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+#total {
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+#totalPreco {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.bnb > div:last-child {
+  border-bottom: none;
+  padding-top: 22px;
+}
+
+.campoCupom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    text-align: left;
+}
+
+.campoCupom label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.campoCupom input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.campoCupom input {
+  display: block;
+  width: 90%;
+  margin: 10px auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+}

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de airnb</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <section class="bnb">
+    <h1>R$620 <span>noite</span></h1>
+    <form>
+      <div class="form">
+        <div class="check">
+          <p>
+            <label for="in">Check-in</label>
+          </p>
+          <p>
+            <input type="date" id="in" />
+          </p>
+
+        </div>
+          <div class="check">
+            <p>
+              <label for="out">Check-out</label>
+            </p>
+            <p>
+              <input type="date" id="out" />
+            </p>
+
+        </div>
+      </div>
+      <p>
+        <label class="hospede" for="hospedes">Hóspedes</label>
+      </p>
+      <p>
+        <select class="hospedes" id="hospedes">
+          <option value="1">1 hospede</option>
+          <option selected value="2">2 hospedes</option>
+          <option value="3">3 hospedes</option>
+          <option value="4">4 hospedes</option>
+        </select>
+      </p>
+      <p class="campoCupom">
+        <label for="cupom">Digite seu cupom</label>
+        <input type="text" id="cupom" p>
+      </p>
+      <p>
+        <button id="enviar" type="submit" onclick="calcularNoite()">Reservar</button>
+      </p>
+    </form>
+    <p class="cobrado">Você ainda não será cobrado</p>
+    <div>
+      <p id="cupomTexto"></p>
+    </div>
+
+    <div>
+      <p id="noite"></p>
+      <p id="noitePreco" class="cobranca"></p>
+    </div>
+    <div>
+      <p id="limpeza"></p>
+      <p id="limpezaPreco" class="cobranca"></p>
+    </div>
+    <div>
+      <p id="servico"></p>
+      <p id="servicoPreco" class="cobranca"></p>
+    </div>
+    <div>
+      <p id="total"></p>
+      <p id="totalPreco" class="total"></p>
+    </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
