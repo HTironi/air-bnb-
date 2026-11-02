@@ -23,7 +23,7 @@ function calcularNoite() {
   total = 0;
   event.preventDefault();
   hospedes= Number(document.getElementById("hospedes").value);
-  taxaHospedes = hospedes*20/100
+  taxaHospedes = (hospedes-1)*20/100
   checkIn = new Date(document.getElementById("in").value);
   checkOut = new Date(document.getElementById("out").value);
   tempo = (checkOut - checkIn) / 86400000;
@@ -31,7 +31,7 @@ function calcularNoite() {
     document.getElementById("noite").textContent = "Datas inseridas invalidas.";
     return;
   }
-  precoTempo = noite * tempo * taxa;
+  precoTempo = noite * tempo * (taxaHospedes+1);
   document.getElementById("noite").textContent = "R$" + noite +"x" + tempo + "Noites:";
   document.getElementById("noitePreco").textContent = "R$ " + precoTempo;
 
@@ -50,7 +50,7 @@ function calcularNoite() {
       document.getElementById("cupomTexto").textContent =
         "Cupom Digitado Valido, Desconto de " + desconto + "%";
       break;
-    } else if (cupom == undefined) {
+    } else if (cupom == "") {
     } else {
       document.getElementById("cupomTexto").textContent =
         "Cupom Digitado Invalido";
